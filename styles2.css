@@ -143,6 +143,10 @@
 }
 
 /* R6 styling */
+.r6 .card {
+  justify-content: center;
+}
+
 .r6 .card-background {
   height: 100%;
   position: absolute;
@@ -150,16 +154,16 @@
 }
 
 .r6 .shape {
-  background: #fff;
-  border-radius: 100px;
+  border: 10px solid #fff;
+  border-radius: 110px;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 220px;
   justify-content: center;
   margin: auto;
   padding: 1em;
   position: relative;
-  width: 200px;
+  width: 220px;
   transition: .35s height, .35s width, .45s border-radius;
 }
 
@@ -179,17 +183,17 @@
 }
 
 .r6 .card:hover .message {
+  font-size: 1.5em;
   opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 .r6 .calendar {
-  color: #222;
+  color: #fff;
   font-family: 'Roboto', 'sans-serif';
   margin: 0;
   opacity: 1;
   text-align: center;
-  transition: .25s font-size, .35s opacity, .35s transform;
+  transition: .25s font-size, .3s opacity;
 }
 
 .r6 .month {
@@ -202,11 +206,10 @@
 }
 
 .r6 .message {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 700;
+  margin: 0 75px;
   opacity: 0;
   position: absolute;
-  transform: translate3d(0, -50px, 0);
-  transition-delay: .25s;
-  width: calc(100% - 2em);
+  width: 330px;
 }
