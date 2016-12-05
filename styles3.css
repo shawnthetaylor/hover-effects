@@ -1,0 +1,61 @@
+/* R7 styling */
+.r7 .card-background {
+  height: 100%;
+  opacity: 1;
+  transform: translate3d(-50px, 0, 0);
+  transition: .35s transform, .45s opacity;
+  width: calc(100% + 50px);
+}
+
+.r7 .card-desc {
+  bottom: 0;
+  color: #fff;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.5em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.r7 .card-title {
+  font-weight: 300;
+  margin: 1em;
+}
+
+.r7 .last {
+  font-weight: 900;
+  margin-left: 5px;
+  transition: .35s margin;
+}
+
+.r7 .quote {
+  position: absolute;
+  bottom: 0;
+  font-size: .8em;
+  text-align: right;
+  right: 0;
+  padding: 1em;
+  opacity: 0;
+  transform: translate3d(-50px, 0, 0);
+  transition: .35s opacity, .45s transform;
+  margin-right: 1em;
+  border-right: 3px solid #fff;
+  max-width: 250px;
+}
+
+.r7 .card:hover .quote {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.r7 .card:hover .last {
+  margin-left: -5px;
+}
+
+.r7 .card:hover .card-background {
+  opacity: .65;
+  transform: translate3d(0, 0, 0);
+}
