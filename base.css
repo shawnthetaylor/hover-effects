@@ -3,7 +3,7 @@
 }
 
 html, body {
-  background: #373e40;
+  background: #222;
   margin: 0;
   padding: 0;
 }
@@ -15,14 +15,29 @@ section {
 
 .navigation {
   display: flex;
-  height: 50px;
+  height: 80px;
   list-style: none;
-  justify-content: center;
   padding: 0;
-  margin: 25px auto;
+  margin: auto;
+}
+
+.navigation > h1 {
+  color: #222;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0 15px 0 0;
+  padding: 50px 2em 0;
+  transition: .35s;
+}
+
+.navigation > h1:hover {
+  padding: 32px 2em 0;
 }
 
 .navigation > li {
+  display: flex;
   cursor: pointer;
   margin: 0 15px;
 }
@@ -34,6 +49,7 @@ section {
   font-family: 'Roboto', 'sans-serif';
   font-weight: 900;
   letter-spacing: 1px;
+  margin: auto;
   padding: 10px 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -47,6 +63,19 @@ section {
 .row {
   display: flex;
   justify-content: center;
+  padding: 7em 2em;
+}
+
+.row:first-child {
+  background: #232138;
+}
+
+.row:nth-child(2) {
+  background: #e0f0f9;
+}
+
+.row:last-child {
+  background: #ffb59c;
 }
 
 .card {

@@ -129,32 +129,39 @@
   height: 20px;
   left: 0;
   margin: 1em;
+  overflow: hidden;
   position: absolute;
-  transition: .45s background, .35s width, .35s height, .35s margin;
+  transition: .45s background, .35s width, .35s height;
   width: 20px;
 }
 
 .r3 .card:hover .box {
-  background: transparent;
-  height: 110px;
-  margin: 0;
-  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  height: 91px;
+}
+
+.r3 .card:first-child:hover .box {
+  width: 225px;
+}
+
+.r3 .card:last-child:hover .box {
+  width: 275px;
 }
 
 .r3 .card-title {
-  background: #fff;
   font-size: 2em;
   font-weight: 300;
   height: 52px;
   margin: 0;
-  padding: 10px 8px;
   text-transform: uppercase;
 }
 
 .r3 .card-desc {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', 'sans-serif';
   opacity: 0;
+  padding: 10px;
   transition: .35s opacity;
 }
 
@@ -166,15 +173,11 @@
 }
 
 .r3 .card-desc > p:first-child {
-  transition-delay: .1s;
-}
-
-.r3 .card-desc > p:nth-child(2) {
-  transition-delay: .2s;
-}
-
-.r3 .card-desc > p:nth-child(3) {
   transition-delay: .3s;
+}
+
+.r3 .card-desc > p:last-child {
+  transition-delay: .4s;
 }
 
 .r3 .card:hover .card-desc > p {
@@ -187,10 +190,8 @@
 }
 
 .r3 .block-info {
-  background: #fff;
   font-weight: 300;
   margin: 0;
-  padding: 10px 8px;
 }
 
 .r3 .surname {
@@ -202,7 +203,6 @@
 .r3 .profession {
   display: inline-flex;
   font-size: 1em;
-  padding: 5px 8px;
   width: auto;
 }
 
@@ -220,5 +220,3 @@
   opacity: 1;
   transform: scale(1);
 }
-
-
