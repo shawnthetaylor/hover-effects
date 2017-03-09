@@ -60,6 +60,11 @@ section {
   color: #373e40;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   justify-content: center;

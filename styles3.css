@@ -59,3 +59,83 @@
   opacity: .65;
   transform: translate3d(0, 0, 0);
 }
+
+/* R8 styling */
+.r8 p {
+  margin: 0;
+}
+
+.r8 .card-background {
+  height: 100%;
+  opacity: .65;
+  transform: translate3d(0, 0, 0);
+  transition: .35s opacity, .35s transform;
+}
+
+.r8 .card:hover .card-background {
+  opacity: 1;
+  transform: translate3d(0, -25px, 0);
+}
+
+.r8 .card-desc {
+  background: #333;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 1em;
+  position: relative;
+  transition: .35s bottom;
+}
+
+.r8 .card:hover .card-desc {
+  bottom: 90px;
+}
+
+.r8 .card-desc .address {
+  font-size: 2em;
+}
+
+.r8 .card-desc .neighborhood {
+  color: rgba(255, 255, 255, .7);
+}
+
+.r8 .card-desc .listing-info {
+  display: flex;
+}
+
+.r8 .card-desc .item {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  line-height: 1em;
+  margin: auto;
+  padding: 10px;
+}
+
+.r8 .card-desc .cost {
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+/* R9 Styling */
+.r9 .card {
+  padding: 2em;
+}
+
+.r9 .card > figcaption:after {
+  border: 2px solid #fff;
+  height: calc(50% - 30px);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  top: 30px;
+  width: 100%;
+}
+
+.r9 .item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
